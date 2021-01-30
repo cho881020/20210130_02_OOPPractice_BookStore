@@ -67,6 +67,17 @@ public class User {
 			return false;
 		}
 		
+//		이 책을 빌려간 사람이 있다면? => 실패 처리.
+		if (book.rentUser != null) {
+//			대여자가 이미 있다.
+			System.out.println("이미 빌려간 책입니다.");
+//			대여자의 이름 출력
+			System.out.println(book.rentUser.name + "이(가) 이미 빌려갔습니다.");
+			
+//			최종 결과 실패 처리
+			return false;
+		}
+		
 //		이 코드는 언제 실행? => 돈이 충분히 있어야. 모자라면 위에서 return 처리. (메쏘드 강제 종료)
 //		위의 if문에 들어가지 않아야만 => 밑의 코드가 실행됨.
 //		대여 실패조건이 하나도 없었다. => 대여 성공으로 처리.
