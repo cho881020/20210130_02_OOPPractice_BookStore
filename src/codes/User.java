@@ -26,7 +26,8 @@ public class User {
 		
 		System.out.println("======사용자정보======");
 		System.out.println("이름 : " + name);
-		System.out.println("나이 : " + "??세");
+//		나이는 따로 계산하지 않고, 클래스에 만들어둔 메쏘드 활용.
+		System.out.println("나이 : " + getKoreanAge(2021) + "세");
 		System.out.println("보유 포인트 : " + point + "P");
 		System.out.println("====================");
 		
