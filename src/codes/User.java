@@ -82,7 +82,15 @@ public class User {
 //		위의 if문에 들어가지 않아야만 => 밑의 코드가 실행됨.
 //		대여 실패조건이 하나도 없었다. => 대여 성공으로 처리.
 		System.out.println("대여 성공");
+		
+//		이 책을 빌려간 사람이 나다! 세팅.
+		book.rentUser = this; // this 키워드 - 차후 설명
+		
+//		포인트를 (책의)대여료 만큼 줄여주자.
+		point -= book.rentFee;
+		
 		return true;
+		
 		
 	}
 
