@@ -51,6 +51,18 @@ public class MainDrive {
 		System.out.println(u2B2Result);
 		
 		
+//		김민수는 베르세르크 대여 가능?
+		u1.rentBook(b2);
+		
+//		먼나라 이웃나라도 대여
+		u1.rentBook(b1);
+		
+//		김민수 상태 다시 출력
+		u1.printUserInfo();
+		
+		
+		
+		
 	}
 
 }
