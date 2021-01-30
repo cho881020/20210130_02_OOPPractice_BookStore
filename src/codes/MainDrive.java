@@ -38,6 +38,19 @@ public class MainDrive {
 		System.out.println(u2Result);
 		
 		
+//		두번째 책.
+//		베르세르크 / 19세 이용가 / 1000원
+		Book b2 = new Book();
+		b2.title = "베르세르크";
+		b2.limitAge = 19;
+		b2.rentFee = 1000;
+		
+		
+//		이수민은 베르세르크를 빌릴 수 있을까?
+		boolean u2B2Result = u2.rentBook(b2);
+		System.out.println(u2B2Result);
+		
+		
 	}
 
 }
