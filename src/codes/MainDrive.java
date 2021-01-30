@@ -25,6 +25,19 @@ public class MainDrive {
 		u2.printUserInfo();
 		
 		
+//		첫번째 책 생성.
+		Book b1 = new Book();
+//		먼나라 이웃나라 / 전체이용가 / 3000원
+		b1.title = "먼나라 이웃나라";
+		b1.limitAge = 0;
+		b1.rentFee = 3000;
+		
+		
+//		이수민은 이 책을 빌릴 수 있는가?
+		boolean u2Result = u2.rentBook(b1);
+		System.out.println(u2Result);
+		
+		
 	}
 
 }
