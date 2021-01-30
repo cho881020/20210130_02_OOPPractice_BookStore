@@ -31,8 +31,25 @@ public class User {
 		System.out.println("====================");
 		
 	}
+	
+//	기능 2. 사용자 나이 계산 기능.
+//	결과자료형 : int
+//	이름 : getKoreanAge
+//	실행 시 필요한 재료? 몇년도에 대한 나이가 궁금한지, 년도를 받아서 계산.
+	int getKoreanAge(int year) {
+		
+		int myAge = year - birthYear + 1;
+		
+//		계산 결과를 이 메쏘드의 결과로 지정.
+		return myAge;
+		
+	}
 
 }
+
+
+
+
 
 
 
