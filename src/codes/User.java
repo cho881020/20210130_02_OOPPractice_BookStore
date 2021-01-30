@@ -45,8 +45,32 @@ public class User {
 		return myAge;
 		
 	}
+	
+//	기능 3. 책을 한권 빌려가는 기능.
+//	결과자료형 : boolean => 대여 성공 / 실패 여부 결과로 지정.
+//	이름 : rentBook
+//	필요한 재료? : 빌려가려는 책을 재료로.
+	boolean rentBook(Book book) {
+		
+//		돈이 충분한지? => 돈이 모자라면, 대여 실패로 결과 처리.
+		if (point < book.rentFee) {
+//			돈이 모자라서 대여 실패.
+			System.out.println("포인트가 부족합니다. 대여에 실패했습니다.");
+			return false;
+		}
+		
+//		이 코드는 언제 실행? => 돈이 충분히 있어야. 모자라면 위에서 return 처리. (메쏘드 강제 종료)
+//		위의 if문에 들어가지 않아야만 => 밑의 코드가 실행됨.
+//		대여 실패조건이 하나도 없었다. => 대여 성공으로 처리.
+		System.out.println("대여 성공");
+		return true;
+		
+	}
 
 }
+
+
+
 
 
 
